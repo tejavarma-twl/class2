@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class SubsubComponent implements OnInit {
 
   @Input() subsubtitle : string;
+
   constructor() { }
 
   ngOnInit() {

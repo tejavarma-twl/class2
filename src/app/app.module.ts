@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+
 import {RouterModule, Routes} from '@angular/router';
 
-const routes: Routes = [
-  { path : '', component : HomeComponent },
+const mypaths: Routes = [
+  { path : '' , component : HomeComponent },
   { path : 'about', component : AboutComponent },
+  { path : 'contact', component : ContactComponent },
   { path : 'blog', component : BlogComponent },
-  { path : 'contact', component : ContactComponent }
+  { path : 'sub', component : SubComponent }
 ];
 
 @NgModule({
@@ -29,7 +31,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(mypaths)
   ],
   providers: [],
   bootstrap: [AppComponent]
